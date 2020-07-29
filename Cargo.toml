@@ -1,0 +1,18 @@
+[package]
+authors = ["Timothy Hughes <tdhughes@protonmail.com>"]
+edition = "2018"
+name = "m_c"
+version = "0.1.0"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+approx = "0.3"
+derive_more = "0.99.5"
+nalgebra = "0.21.1"
+num = "0.2.1"
+petgraph = "0.5"
+rand = "0.7"
+rand_distr = "0.2.2"
+thiserror = "1.0"
+typenum = "1.12.0"
