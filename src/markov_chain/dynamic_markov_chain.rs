@@ -47,6 +47,7 @@ where
 
 // TODO: Figure out way to deduplicate
 // Probably impossible for now on stable Rust
+// See static version for additional info.
 impl<N> DynamicMarkovChain<N>
 where
     N: RealField + std::convert::From<f64>,

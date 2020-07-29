@@ -55,6 +55,8 @@ where
     DefaultAllocator: Allocator<N, D, D> + Allocator<N, D>,
 {
     // https://en.wikipedia.org/wiki/Power_iteration
+    // Code adapted from http://mlwiki.org/index.php/Power_Iteration#Implementation and 
+    // https://github.com/gvanderheide/discreteMarkovChain
     fn stationary_distribution_power(
         &self,
         tolerance: f64,
@@ -70,6 +72,7 @@ where
         let matrix = self.matrix.internal().transpose();
         let mut res: VectorN<N, D> = VectorN::zeros();
         // Start with 1. as the eigenvector should sum to 1. anyways.
+        // Would prefer it to be random.
         res[0] = 1.0_f64.into();
         let mut res_test: VectorN<N, D> = VectorN::zeros();
         let mut test = &res - res_test;
@@ -107,8 +110,6 @@ mod tests {
         ]))
         .unwrap();
         let chain = StaticMarkovChain::new(matrix2).unwrap();
-        // this is unfortunate, related to this issue:
-        // https://github.com/rustsim/nalgebra/issues/317
         let mut initial: VectorN<f64, _> = zero();
         initial[0] = 1.0;
         let result = chain.sample_distribution_times(initial, 1);

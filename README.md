@@ -31,7 +31,7 @@ fn main() -> Result<(), Box<dyn Error>> {
 }
 ```
 
-View the tests and the library's documentation to see other examples of how to use the library properly. The crate re-exports three libraries at the root, and the crate as it is would not be possible without them. Its best to use the re-exported crates so the version stays compatible. As of right now  [specialization](https://github.com/rust-lang/rust/issues/31844), [const generics](https://github.com/rust-lang/rust/issues/44580), and [generic associated types](https://github.com/rust-lang/rust/issues/44265) would make this library a lot more ergonomic. If you do use this library and discover any issues, please open an issue on GitHub or contact me.
+View the tests and the library's documentation to see other examples of how to use the library properly. If you know the size of your matrix, use the static types, otherwise, use dynamic. The crate re-exports three libraries at the root, and the crate as it is would not be possible without them. Its best to use the re-exported crates so the versions stays compatible. As of right now  [specialization](https://github.com/rust-lang/rust/issues/31844), [const generics](https://github.com/rust-lang/rust/issues/44580), and [generic associated types](https://github.com/rust-lang/rust/issues/44265) would make this library a lot more ergonomic. If you do use this library and discover any issues, please open an issue on GitHub or contact me.
 
 ## Contributing
 
