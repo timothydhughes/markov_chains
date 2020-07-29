@@ -5,7 +5,7 @@ A library for creating and using Markov chains and realizations of other stochas
 
 ## Installation
 
-As of right now, this crate isn't hosted on [crates.io](https://crates.io/). I personally don't feel as though its ready to publish (I'm not an expert in this subject and the name isn't good). If you wish to use it, clone this repo and use [cargo's ability to pull local crates in](https://doc.rust-lang.org/cargo/reference/specifying-dependencies.html) to experiment with it.
+For now, this crate isn't hosted on [crates.io](https://crates.io/). I personally don't feel as though its ready to publish (I'm not an expert in this subject and the name isn't good). If you wish to use it, clone this repo and use [cargo's ability to pull local crates in](https://doc.rust-lang.org/cargo/reference/specifying-dependencies.html) to experiment with it.
 
 ## Usage
 
